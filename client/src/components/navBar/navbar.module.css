@@ -1,0 +1,51 @@
+.Main{
+  height: 7%;
+  width: 100%;
+  background-color: #302c2c;
+  margin-bottom: 2%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-size: larger;
+  font-weight: 600;
+}
+.RestaurantName{
+  width: 30%;
+  height: 100%;
+  margin-left: 15%;
+  display: flex;
+  justify-self: flex-start;
+  align-items: center;
+  cursor: pointer;
+}
+/* .leftHalf{
+  width: 15%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: aqua;
+  margin-right: 15%;
+} */
+.Order{
+  width: 5%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15%;
+  cursor: pointer;
+  background-color: white;
+  color: #302c2c;
+  border-radius: 0.2em;
+  border: 1px solid white;
+}
+.Order:hover{
+  background: none;
+  color: white;
+}
+.Order:active{
+  background-color: #1f1f1f;
+}
