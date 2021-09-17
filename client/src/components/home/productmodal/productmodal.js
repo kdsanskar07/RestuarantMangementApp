@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 import styles from './productmodal.module.css';
-import {fetchRequest} from '../../../service.js';
+import { fetchRequest } from '../../../service.js';
 
 const ProductModal = (props) => {
 
@@ -22,22 +22,22 @@ const ProductModal = (props) => {
   }
 
   const handleSubmit = async (e) => {
-    try{
+    try {
       e.stopPropagation();
-      if(props.isEdit){
-        let data = {productId:props.product[0],name:allStates.name,amount:allStates.price};
-        let res = await fetchRequest("product/update",data,true,true);
-        if(res.success){
-          props.product[2]=allStates.name;
-          props.product[3]=allStates.price;
+      if (props.isEdit) {
+        let data = { productId: props.product[0], name: allStates.name, amount: allStates.price };
+        let res = await fetchRequest("product/update", data, true, true);
+        if (res.success) {
+          props.product[2] = allStates.name;
+          props.product[3] = allStates.price;
           props.updateProduct(props.product);
           props.hideModal();
         }
-      }else{
-        let productData={name:allStates.name,amount:allStates.price,cuisineName:props.selectedCuisine};
-        let res = await fetchRequest("product/create",productData,true,true);
-        if(res.success){
-          let temp=[];
+      } else {
+        let productData = { name: allStates.name, amount: allStates.price, cuisineName: props.selectedCuisine };
+        let res = await fetchRequest("product/create", productData, true, true);
+        if (res.success) {
+          let temp = [];
           temp.push(res._id);
           temp.push(props.selectedCuisine);
           temp.push(allStates.name);
@@ -45,21 +45,21 @@ const ProductModal = (props) => {
           props.addProduct(temp);
           props.hideModal();
         }
-      } 
-    }catch(error){
+      }
+    } catch (error) {
       console.log(error);
     }
   }
 
   const validateFields = (ref) => {
-    if(ref.current.value && ref.current.value.length>0) {
+    if (ref.current.value && ref.current.value.length > 0) {
       return true;
     }
     return false;
   }
 
   const handleChange = (e) => {
-    if(validateFields(nameRef) && validateFields(priceRef)) {
+    if (validateFields(nameRef) && validateFields(priceRef)) {
       setAllStates({
         name: nameRef.current.value,
         price: priceRef.current.value,
@@ -74,10 +74,10 @@ const ProductModal = (props) => {
     }
   }
 
-  return(
+  return (
     <div className={styles.modal}>
       <div className={styles.header}>
-        {props.isEdit?"Edit Product Details":"Add New Product"}
+        {props.isEdit ? "Edit Product Details" : "Add New Product"}
       </div>
       <div className={styles.body}>
         <div className={styles.inputwrapper}>

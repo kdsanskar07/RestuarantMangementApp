@@ -8,12 +8,12 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-        <Switch>
-          <Route exact to="/">
-            <App/>
-          </Route>
-        </Switch>
-      </BrowserRouter>
+      <Switch>
+        <Route exact to="/">
+          <App />
+        </Route>
+      </Switch>
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );

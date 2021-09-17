@@ -9,9 +9,9 @@ import UserView from './components/orders/userview/userview';
 function App(props) {
   return (
     <div className={styles.App}>
-      <Route component={AdminView} exact={true} path="/thetestkitchen/orders"/>
-      <Route component={UserView} exact={true} path="/thetestkitchen/myorders"/>
-      <Route component={Home} exact={true} path="/thetestkitchen/"/>
+      <Route component={AdminView} exact={true} path="/thetestkitchen/orders" />
+      <Route component={UserView} exact={true} path="/thetestkitchen/myorders" />
+      <Route component={Home} exact={true} path="/thetestkitchen/" />
       <Route component={Login} exact={true} path="/" />
     </div>
   );

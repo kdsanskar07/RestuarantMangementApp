@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from './product.module.css';
 
-const Product = ({item}) => {
-  return(
+const Product = ({ item }) => {
+  return (
     <div className={styles.item}>
       <div className={styles.leftside}>
         <span>{item.itemName}</span>

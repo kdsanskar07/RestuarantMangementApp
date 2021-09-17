@@ -3,6 +3,8 @@ const Config = require('../config/config')
 
 const PRIV_KEY = Config.development.private_key;
 
+// this middleware send userId if valid jwt token is passed 
+
 module.exports = (req, res, next) => {
   const authHeader = req.get('Authorization');
   if (!authHeader) {

@@ -3,7 +3,7 @@ import styles from './billmodal.module.css';
 
 import Product from '../productcard/product';
 
-const BillModal = ({order, hideModal}) => {
+const BillModal = ({ order, hideModal }) => {
 
 	const items = order.productList;
 

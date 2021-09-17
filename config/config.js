@@ -10,9 +10,9 @@ const PRIVATE_KEY = fs.readFileSync(pathToKey_priv, 'utf8');
 
 module.exports = {
   "development": {
-    "port":process.env.PORT,
-    "mongo_uri":process.env.MONGO_URI,
-    "node_env":process.env.NODE_ENV,
+    "port": process.env.PORT,
+    "mongo_uri": process.env.MONGO_URI,
+    "node_env": process.env.NODE_ENV,
     "public_key": PUBLIC_KEY,
     "private_key": PRIVATE_KEY,
   },
