@@ -42,7 +42,7 @@
 
 ## About The Project
 
-The Application Shows Menu of the resturant along with the abilty to place order for customer's food with associated quantity different cuisines.
+The Application Shows Menu of the resturant along with the abilty to place order for customer's food with associated quantity having cuisines.
 Also owner can login with email Id "owner@gmail.com" and manage each food item along with past orders.
 
 <!-- ### Timeline
@@ -81,7 +81,7 @@ To get a local copy up and running follow these simple example steps.
 
 2. Goto the project repo and run command 'npm install && node server.js' 
 
-3. Goto the client repo and run commaand 'npm install && npm start' 
+3. Goto the client repo and run command 'npm install && npm start' 
    
 <!-- USAGE EXAMPLES
 
