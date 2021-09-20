@@ -43,7 +43,7 @@
 ## About The Project
 
 The Application Shows Menu of the resturant along with the abilty to place order for customer's food with associated quantity different cuisines.
-Also owner can also login with email Id "owner@gmail.com" and manage each food item along with past orders.
+Also owner can login with email Id "owner@gmail.com" and manage each food item along with past orders.
 
 <!-- ### Timeline
 
