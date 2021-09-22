@@ -68,11 +68,11 @@ Also owner can login with email Id "owner@gmail.com" and manage each food item a
 
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
+<!-- ### Prerequisites
 
 - npm
   sh
-  npm install npm@latest -g
+  npm install npm@latest -g -->
   
 
 ### Installation
